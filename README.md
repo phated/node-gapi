@@ -2,10 +2,10 @@
 
 
 ## Installation
-    
-To install APPNAME, use [npm](http://github.com/isaacs/npm):
 
-    $ npm install -g APPNAME
+To install gapi, use [npm](http://github.com/isaacs/npm):
+
+    $ npm install -g gapi
 
 ## Usage
 
@@ -13,13 +13,13 @@ Nothing here yet
 
 ## Examples
 
-You can view further examples in the [example folder.](https://github.com/wearefractal/APPNAME/tree/master/examples)
+You can view further examples in the [example folder.](https://github.com/phated/gapi-npm/tree/master/examples)
 
 ## LICENSE
 
 (MIT License)
 
-Copyright (c) 2011 Fractal <contact@wearefractal.com>
+Copyright (c) 2011 Phated <blaine@iceddev.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
