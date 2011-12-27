@@ -60,17 +60,30 @@ gapi.server.load('plus','v1',function(){
 ```
 
 ## Currently Implemented Request Functions and Options
+Get an Activity
+
 ```javascript
 /* activityId is Required*/
 gapi.server.plus.activities.get({
 	activityId : '',
 	fields : ''
 });
+```
 
-
+List Activities
+```javascript
+/* userId and collection are Required;
+	 collection : 'public' is the only available option currently */
 gapi.server.plus.activities.list({
-	userId: '', collection: 'public', maxResults: '1'});
+	userId : '',
+	collection : 'public',
+	maxResults : '',
+	pageToken : '',
+	fields : ''
+});
+```
 
+```javascript
 gapi.server.plus.activities.search({query: 'Test', maxResults: '1'});
 
 gapi.server.plus.comments.get({commentId: 'sTcuoWTR52tnNY9UpoW2TfNb0PnCiiutGuDoTzFyeoI7hNeoa-HBWHoDTQBA59pNvtVbsipeS_U', maxResults: '1'});
