@@ -60,7 +60,7 @@ gapi.server.load('plus','v1',function(){
 ```
 
 ## Currently Implemented Request Functions and Options
-Get an Activity
+Get One Activity
 
 ```javascript
 /*
@@ -74,36 +74,127 @@ gapi.server.plus.activities.get({
 });
 ```
 
-List Activities
+List Activities of One User
 
 ```javascript
 /*
  *
- * userId and collection are Required;
+ * userId and collection are Required
  * collection : 'public' is the only available option currently
+ * maxResults can be an integer from 1-100
  *
  */
 gapi.server.plus.activities.list({
 	userId : '',
 	collection : 'public',
-	maxResults : '',
+	maxResults : 100,
 	pageToken : '',
 	fields : ''
 });
 ```
 
+Search all Activities using Query
+
 ```javascript
-gapi.server.plus.activities.search({query: 'Test', maxResults: '1'});
+/*
+ *
+ * query is Required
+ * separate words in query with a +
+ * maxResults can be an integer from 1-20;
+ *
+ */
+gapi.server.plus.activities.search({
+	query : '',
+	language : '',
+	maxResults : 20,
+	orderBy : '',
+	pageToken : '',
+	fields : ''
+});
+```
 
-gapi.server.plus.comments.get({commentId: 'sTcuoWTR52tnNY9UpoW2TfNb0PnCiiutGuDoTzFyeoI7hNeoa-HBWHoDTQBA59pNvtVbsipeS_U', maxResults: '1'});
+Get One Comment
 
-gapi.server.plus.comments.list({activityId: 'z12mijziozu0x5hrd04cfhnw1yymsn2o414', maxResults: '1'});
+```javascript
+/*
+ *
+ * commentId is Required
+ *
+ */
+gapi.server.plus.comments.get({
+	commentId : '',
+	fields : ''
+});
+```
 
-gapi.server.plus.people.get({userId: '102147307918874735077'});
+List All Comments of One Activity
 
-gapi.server.plus.people.listByActivity({activityId: 'z12mijziozu0x5hrd04cfhnw1yymsn2o414', collection: 'plusoners', maxResults: '1'});
+```javascript
+/*
+ *
+ * activityId is Required
+ * maxResults can be an integer from 0-100;
+ *
+ */
+gapi.server.plus.comments.list({
+	activityId : '',
+	maxResults : 100,
+	pageToken : '',
+	fields : ''
+});
+```
 
-gapi.server.plus.people.search({query: 'Blaine+Bublitz'});
+Get One Person
+
+```javascript
+/*
+ *
+ * userId is Required
+ *
+ */
+gapi.server.plus.people.get({
+	userId: '',
+	fields : ''
+});
+```
+
+List the PlusOners or Resharers of One Activity
+
+```javascript
+/*
+ *
+ * activityId and collection are Required
+ * collection can be either 'resharers' or 'plusoners'
+ * maxResults can be an integer from 1-100;
+ *
+ */
+gapi.server.plus.people.listByActivity({
+	activityId: '',
+	collection: '',
+	maxResults: 100,
+	pageToken : '',
+	fields : ''
+});
+```
+
+Search all People using Query
+
+```javascript
+/*
+ *
+ * query is Required
+ * separate words in query with a +
+ * maxResults can be an integer from 1-20;
+ *
+ */
+gapi.server.plus.people.search({
+	query : '',
+	language : '',
+	maxResults : 20,
+	orderBy : '',
+	pageToken : '',
+	fields : ''
+});
 ```
 
 ## Examples
