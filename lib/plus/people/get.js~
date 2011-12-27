@@ -10,7 +10,7 @@ var peopleGet = function(options) {
   options.key = common.api.key;
 	options.alt = 'json';
 
-  var query = querystring.stringify(options);
+  var query = common.querystring.stringify(options);
 
 	common.requestOptions.path = ['/plus/v1','/people/',userId,'?',query].join('');
 

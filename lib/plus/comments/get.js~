@@ -13,7 +13,7 @@ var commentsGet = function(options) {
 
   common.requestOptions.path = ['/plus/v1','/comments/',commentId,'?',query].join('');
 
-	return require('../../execute');
+	return require('../../execute')
 };
 
 module.exports = commentsGet;

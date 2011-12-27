@@ -10,7 +10,6 @@ var commentsList = function(options) {
 	options.alt = 'json';
 
   var query = querystring.stringify(options);
-
   common.requestOptions.path = ['/plus/v1','/activities/',activityId,'/comments','?',query].join('');
 
 	return require('../../execute');
