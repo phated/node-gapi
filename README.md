@@ -21,6 +21,44 @@ To get started, set your API key with `gapi.server.setApiKey()`:
 gapi.server.setApiKey('YOUR_API_KEY');
 ```
 
+You can then use `gapi.server.load('API_NAME', 'API_VERSION', CALLBACK)` to load the API you wish to use:
+
+```javascript
+gapi.server.load('plus','v1',function(){});
+```
+
+Inside your load callback, you can generate your requests using the `gapi.server.API_NAME.NAMESPACE.FUNCTION(OPTIONS)` pattern:
+
+```javascript
+var request = gapi.server.plus.people.get({userId: '102147307918874735077'});
+```
+
+To execute your request, you can call `REQUEST.execute(CALLBACK(RESPONSE))`:
+
+```javascript
+request.execute(function(resp){});
+```
+
+The response of the callback is a JSON object that you can work with:
+
+```javascript
+res.writeHead(200, {'Content-Type': 'text/plain'});
+res.end(JSON.stringify(resp));
+```
+
+Putting it all together:
+
+```javascript
+gapi.server.setApiKey('YOUR_API_KEY');
+gapi.server.load('plus','v1',function(){
+	var request = gapi.server.plus.people.get({userId: '102147307918874735077'});
+	request.execute(function(resp){
+		res.writeHead(200, {'Content-Type': 'text/plain'});
+		res.end(JSON.stringify(resp));
+	});
+});
+```
+
 ## Examples
 
 You can view further examples in the [example folder.](https://github.com/phated/gapi-npm/tree/master/examples)
