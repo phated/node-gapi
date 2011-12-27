@@ -63,7 +63,11 @@ gapi.server.load('plus','v1',function(){
 Get an Activity
 
 ```javascript
-/* activityId is Required*/
+/*
+ *
+ * activityId is Required
+ *
+ */
 gapi.server.plus.activities.get({
 	activityId : '',
 	fields : ''
@@ -73,8 +77,12 @@ gapi.server.plus.activities.get({
 List Activities
 
 ```javascript
-/* userId and collection are Required;
-	 collection : 'public' is the only available option currently */
+/*
+ *
+ * userId and collection are Required;
+ * collection : 'public' is the only available option currently
+ *
+ */
 gapi.server.plus.activities.list({
 	userId : '',
 	collection : 'public',
