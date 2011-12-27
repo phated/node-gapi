@@ -3,7 +3,11 @@ A Node.js implementation of the ["JavaScript Client Library for Google APIs - Al
 
 ## Installation
 
-To install gapi, use [npm](http://github.com/isaacs/npm):
+To install gapi locally, use [npm](http://github.com/isaacs/npm):
+
+    $ npm install gapi
+
+To install gapi globally, use [npm](http://github.com/isaacs/npm):
 
     $ npm install -g gapi
 
