@@ -64,6 +64,8 @@ gapi.server.load('plus','v1',function(){
 ```
 
 ## Currently Implemented Request Functions and Options
+
+### Google+ V1 ('plus','v1')
 Get One Activity
 
 ```javascript
@@ -197,6 +199,23 @@ gapi.server.plus.people.search({
 	maxResults : 20,
 	orderBy : '',
 	pageToken : '',
+	fields : ''
+});
+```
+
+### Google Webfonts V1 ('webfonts','v1')
+
+Retrieves the list of fonts currently served by the Google Web Fonts Developer API
+
+```javascript
+/*
+ *
+ * none are Required
+ * sort can be: 'alpha', 'date', 'popularity', 'style', or 'trending'
+ *
+ */
+gapi.server.webfonts.webfonts.list({
+	sort : '',
 	fields : ''
 });
 ```
