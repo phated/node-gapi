@@ -59,6 +59,31 @@ gapi.server.load('plus','v1',function(){
 });
 ```
 
+## Currently Implemented Request Functions and Options
+```javascript
+/* activityId is Required*/
+gapi.server.plus.activities.get({
+	activityId : '',
+	fields : ''
+});
+
+
+gapi.server.plus.activities.list({
+	userId: '', collection: 'public', maxResults: '1'});
+
+gapi.server.plus.activities.search({query: 'Test', maxResults: '1'});
+
+gapi.server.plus.comments.get({commentId: 'sTcuoWTR52tnNY9UpoW2TfNb0PnCiiutGuDoTzFyeoI7hNeoa-HBWHoDTQBA59pNvtVbsipeS_U', maxResults: '1'});
+
+gapi.server.plus.comments.list({activityId: 'z12mijziozu0x5hrd04cfhnw1yymsn2o414', maxResults: '1'});
+
+gapi.server.plus.people.get({userId: '102147307918874735077'});
+
+gapi.server.plus.people.listByActivity({activityId: 'z12mijziozu0x5hrd04cfhnw1yymsn2o414', collection: 'plusoners', maxResults: '1'});
+
+gapi.server.plus.people.search({query: 'Blaine+Bublitz'});
+```
+
 ## Examples
 
 You can view further examples in the [example folder.](https://github.com/phated/gapi-npm/tree/master/examples)
