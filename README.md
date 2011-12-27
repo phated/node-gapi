@@ -71,6 +71,7 @@ gapi.server.plus.activities.get({
 ```
 
 List Activities
+
 ```javascript
 /* userId and collection are Required;
 	 collection : 'public' is the only available option currently */
