@@ -1,4 +1,4 @@
-**Nothing here yet**
+A Node.js implementation of the ["JavaScript Client Library for Google APIs - Alpha version"](https://code.google.com/p/google-api-javascript-client/)
 
 
 ## Installation
