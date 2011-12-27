@@ -9,7 +9,17 @@ To install gapi, use [npm](http://github.com/isaacs/npm):
 
 ## Usage
 
-Nothing here yet
+Include gapi
+
+```javascript
+var gapi = require('gapi');
+```
+
+To get started, set your API key with `gapi.server.setApiKey()`:
+
+```javascript
+gapi.server.setApiKey('YOUR_API_KEY');
+```
 
 ## Examples
 
