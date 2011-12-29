@@ -224,6 +224,10 @@ gapi.server.webfonts.webfonts.list({
 
 You can view further examples in the [example folder.](https://github.com/phated/gapi-npm/tree/master/examples)
 
+## Tests
+
+    $ npm test gapi
+
 ## LICENSE
 
 (MIT License)
