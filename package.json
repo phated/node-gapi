@@ -2,8 +2,8 @@
    "name":"gapi",
    "description":"Nothing here yet",
    "version":"0.0.1",
-   "homepage":"http://github.com/phated/gapi-npm",
-   "repository":"git://github.com/phated/gapi-npm.git",
+   "homepage":"http://github.com/phated/node-gapi",
+   "repository":"git://github.com/phated/node-gapi.git",
    "author":"Phated <blaine@iceddev.com> (http://iceddev.com/)",
    "main":"./lib/gapi.js",
    "scripts":{
@@ -18,7 +18,7 @@
    "licenses":[
       {
          "type":"MIT",
-         "url":"http://github.com/phated/gapi-npm/raw/master/LICENSE"
+         "url":"http://github.com/phated/node-gapi/raw/master/LICENSE"
       }
    ]
 }
