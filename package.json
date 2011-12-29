@@ -6,7 +6,9 @@
    "repository":"git://github.com/phated/gapi-npm.git",
    "author":"Phated <blaine@iceddev.com> (http://iceddev.com/)",
    "main":"./lib/gapi.js",
-
+   "scripts":{
+     "test":"node ./tests/tests.js"
+   },
    "dependencies":{
       "should":"*"
    },
