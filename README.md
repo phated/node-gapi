@@ -224,6 +224,10 @@ gapi.server.webfonts.webfonts.list({
 
 You can view further examples in the [example folder.](https://github.com/phated/gapi-npm/tree/master/examples)
 
+Running the Express example is as easy as entering (in terminal)
+
+	$ cd ./node_modules/gapi/examples/express-example/ && npm install ./ && node app.js
+
 ## Tests
 
     $ npm test gapi
