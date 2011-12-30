@@ -53,7 +53,7 @@ div.container-fluid
           else
             p !{activity.object.content}
           p
-            a.btn(href='#') Comments: #{activity.object.replies.totalItems} &raquo;
+            a.btn.comments-btn(href='/comments/#{activity.id}') Comments: #{activity.object.replies.totalItems} &raquo;
             a.btn.danger(href='#{activity.url}') View Post on Google+ &raquo;
     footer
       p &copy; Phated @ IcedDev 2011

@@ -34,7 +34,20 @@ gapi.server.setApiKey('AIzaSyB14Ua7k5_wusxHTQEH3sqmglO7MHjHPCI');
 // Routes
 
 app.get('/', routes.index);
-app.get('/comments/:id', routes.comments);
+app.get('/comments/:id', function(req, res){
+  gapi.server.load('plus','v1',function() {
+		var commentsRequest = gapi.server.plus.comments.list({activityId: req.params.id});
+		commentsRequest.execute(function(resp) {
+			if (req.xhr) {
+				res.partial('comments', resp);
+			} else {
+				res.render('comments', resp);
+			}
+		});
+	});
+});
 
-app.listen(3000);
+var port = process.env.PORT || 3000;
+
+app.listen(port);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
