@@ -1,0 +1,12 @@
+app.get('/comments/:id', function(req, res){
+  if (req.xhr) {
+    // respond with the each user in the collection
+    // passed to the "user" view
+    res.partial('user', users);
+  } else {
+    // respond with layout, and users page
+    // which internally does partial('user', users)
+    // along with other UI
+    res.render('users', { users: users });
+  }
+});
