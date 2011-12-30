@@ -1,6 +1,6 @@
 {
    "name":"gapi",
-   "description":"Nothing here yet",
+   "description":"Node implementation of Google's JavaScript Library (Currently Implemented: Google+ & Google WebFonts)",
    "version":"0.0.1",
    "homepage":"http://github.com/phated/node-gapi",
    "repository":"git://github.com/phated/node-gapi.git",
