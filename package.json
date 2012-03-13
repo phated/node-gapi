@@ -5,12 +5,16 @@
    "homepage":"http://github.com/phated/node-gapi",
    "repository":"git://github.com/phated/node-gapi.git",
    "author":"Phated <blaine@iceddev.com> (http://iceddev.com/)",
-   "main":"./lib/gapi.js",
+   "main":"./index.js",
    "scripts":{
-     "test":"node ./tests/tests.js"
+     "test":"make test"
    },
    "dependencies":{
-      "should":"*"
+      "coffee-script":"*"
+   },
+   "devDependencies":{
+      "should":"*",
+      "mocha":"*"
    },
    "engines":{
       "node":">= 0.4.0"
