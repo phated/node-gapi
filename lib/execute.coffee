@@ -1,5 +1,5 @@
-config = require('./config')
-https = require('https')
+config = require './config'
+https = require 'https'
 
 module.exports =
   execute: (callback) ->
