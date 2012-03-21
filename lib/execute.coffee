@@ -15,6 +15,6 @@ module.exports =
 
     req.end()
     req.on 'error', (err) ->
-        callback err
+      callback err
 
     return req

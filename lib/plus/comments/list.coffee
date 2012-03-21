@@ -14,4 +14,4 @@ module.exports = ({activityId, maxResults, pageToken, sortOrder, fields}) ->
 
   config.requestOptions.path = "/plus/v1/activities/#{activityId}/comments?#{qs}"
 
-  return '../../execute'
+  return require '../../execute'
