@@ -18,5 +18,3 @@ module.exports =
         callback err
 
     return req
-
-#module.exports = restCall

@@ -1,6 +1,6 @@
 config = require '../config'
 
-module.exports = {
+module.exports =
   activities:
     get: (options) ->
       try
@@ -44,4 +44,3 @@ module.exports = {
         require('./people/search') options
       catch error
         config.error error
-}
