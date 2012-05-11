@@ -236,7 +236,7 @@ Running the Express example is as easy as entering (in terminal)
 
 (MIT License)
 
-Copyright (c) 2011 Phated <blaine@iceddev.com>
+Copyright (c) 2012 Blaine Bublitz <blaine@iceddev.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
