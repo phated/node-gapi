@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/phated/node-gapi.png)](http://travis-ci.org/phated/node-gapi)
 A Node.js implementation of the ["JavaScript Client Library for Google APIs - Alpha version"](https://code.google.com/p/google-api-javascript-client/)
 
 
